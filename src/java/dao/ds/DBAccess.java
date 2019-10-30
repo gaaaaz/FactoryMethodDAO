@@ -22,7 +22,7 @@ public class DBAccess {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             cn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila?useSSL=false",
-                    "root", "");
+                    "root", "root");
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (Exception e) {
